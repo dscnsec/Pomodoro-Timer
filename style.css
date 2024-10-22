@@ -1,6 +1,28 @@
 body {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #161932; /* Navbar background color */
+    display: flex;
+    justify-content: center; /* Center align buttons */
+    padding: 20px; /* Space around the navbar */
+}
+
+.nav-button {
+    background-color: transparent; /* No background for buttons */
+    color: #565B76; /* Text color */
+    border: 2px solid #565B76; /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Space inside buttons */
+    margin: 0 10px; /* Space between buttons */
+    font-size: 16px; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-button:hover {
+    background-color: #F87070; /* Hover background color */
+    color: white; /* Change text color on hover */
 }
