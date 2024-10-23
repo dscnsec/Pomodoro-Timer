@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    HELLO NSEC !
+    <div class="pomodoro-container">
+        <h1 class="header">Pomodoro</h1>
+        
+        <!-- Wrapping all buttons in a single div -->
+        <div class="button-container">
+            <button class="pomodoro-button active">pomodoro</button>
+            <button class="break-button">short break</button>
+            <button class="break-button">long break</button>
+        </div>
+        <div class="timer">
+            <div class="circle">
+                <span class="time">20:00</span>
+                <span class="start">START</span>
+            </div>
+        </div>
+        <div class="settings-icon">&#9881;</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
