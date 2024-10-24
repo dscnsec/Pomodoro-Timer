@@ -1,6 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at center, #1a1c35, #141629);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pomodoro-container {
+      text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+/* Styled button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between the buttons */
+    margin-bottom: 30px; /* Space between buttons and the timer */
+    
+    background-color: #1b1e33; /* Dark background color for the button container */
+    padding: 10px; /* Padding around the buttons inside the container */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
+}
+
+.pomodoro-button, .break-button {
+    background-color: #2d2f46;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.pomodoro-button.active {
+    background-color: #f87070;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px; /* Adjust to match circle size */
+    width: 330px; /* Adjust to match circle size */
+    margin-bottom: 30px;
+}
+
+.circle {
+    width: 270px;
+    height: 270px;
+    background: radial-gradient(circle, #292D42, #141629);
+    border-radius: 50%;
+    border: 5px solid #f87070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+
+      /* New dark border */
+    box-shadow: 0 0 0 15px #1b1e33, 0px 0px 30px 5px rgba(0, 0, 0, 0.5); /* Outer dark border + shadow */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time {
+    font-size: 50px;
     font-weight: bold;
-    text-align: center;
+}
+
+.start {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #f87070;
+}
+
+.settings-icon {
+    font-size: 35px;
+    margin-top: 15px;
+    cursor: pointer;
 }
